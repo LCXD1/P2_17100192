@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+
+    <style type="text/css">
+    *{
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    body{
+        /*background: url(https://i.imgur.com/JTr9PM1.jpg);*/
+        background: url(file:///C:/Users/Radio%20Shack/Pictures/YGO.jpg);
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .cont .form .header .title{
+        font-weight: normal;
+        font-family: Century;
+        color: darkcyan;
+        text-align: center;
+        padding: 14px 0;
+    }
+
+    .cont .form .header .title span{
+        color: #fff;
+    }
+
+    .cont .form{
+        background: rgba(0,0,0,.8);
+        width: 90%;
+        max-width: 650px;
+        margin: auto;
+        padding: 5px 35px;
+        margin-top: 125px;
+        padding-bottom: 30px;
+        border-radius: 3px;
+    }
+
+    .cont .form .f-input{
+        background: rgba(0,0,0,.9);
+        border: none;
+        outline: none;
+        border-bottom: 2px solid darkcyan;
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border-radius: 2px;
+        font-size: 14px;
+        color: #fff;
+        font-family: Century;
+    }
+
+    .cont .form .button{
+        width: 100%;
+        font-family: Century;
+        outline: none;
+        background: darkcyan;
+        font-size: 16px;
+        border: none;
+        color: #fff;
+        padding: 15px 0;
+        cursor: pointer;
+    }
+
+    .cont .form .button:hover{
+        background: lightseagreen;
+    }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <form class="form">
+            <div class="header">
+                <h1 class="title">R<span>EGISTRATE</span></h1>
+            </div>
+
+            <input type="text" class="f-input" placeholder="Username">
+
+            <input type="text" class="f-input" placeholder="Email">
+
+            <input type="text" class="f-input" placeholder="Password">
+
+            <input type="submit" class="button" value="REGISTRAR">
+
+        </form>
+    </div>
+</body>
+</html>
