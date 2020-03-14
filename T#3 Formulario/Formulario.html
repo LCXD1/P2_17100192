@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO CON MATERIALIZE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        .pst{
+            text-align: center;
+            margin-top: 50px;
+            background-color: azure;
+        }
+
+        .input-field{
+            width: 99%;
+        }
+
+        .btn{
+            width: 100%;
+            margin-top: 25px;
+            background-color: #00b0ff;
+        }
+
+        .btn:hover{
+            background-color: #40c4ff;
+        }
+    </style>
+
+</head>
+<body class="light-blue darken-4">
+    <div class="section container pst">
+        <div class="container pst">
+            <form>
+                <h4>Sign Up</h4>
+                <div class="input-field">
+                    <i class="material-icons prefix">person</i>
+                    <input type="text" id="username">
+                    <label for="username">Username</label>
+                </div><br>
+
+                <div class="input-field">
+                    <i class="material-icons prefix">email</i>
+                    <input type="text" id="email">
+                    <label for="email">E-mail</label>
+                </div><br>
+
+                <div class="input-field">
+                    <i class="material-icons prefix">lock</i>
+                    <input type="password" id="password">
+                    <label for="password">Password</label>
+                </div><br>
+
+                <input type="submit" value="sign up" class="btn btn-large">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
