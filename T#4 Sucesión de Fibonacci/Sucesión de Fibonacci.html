@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucesión de Fibonacci</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .pst{
+            margin-top: 125px;
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-bottom: 125px;
+            width: 45%;
+            height: 45%;
+        }
+
+        .btn{
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        .tam{
+            width: 425px;
+            height: 245px;
+        }
+
+        #r{
+            border: 2px solid teal;
+            border-radius: 4px;
+            overflow: hidden;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body class="teal lighten-2 center">
+    <div class="section container blue-grey lighten-5 z-depth-5 left pst">
+        <h4>Sucesión de Fibonacci</h4>
+        <div class="container tam">
+            <form action="#">
+                <div class="input-field">
+                    <i class="material-icons prefix">looks_one</i>
+                    <input type="text" id="valor1">
+                    <label for="valor1">Ingrese el primer valor</label>
+                </div>
+
+                <div class="input-field">
+                    <i class="material-icons prefix">looks_two</i>
+                    <input type="text" id="valor2">
+                    <label for="valor2">Ingrese el segundo valor</label>
+                </div>
+
+                <div class="input-field">
+                    <i class="material-icons prefix">looks_3</i>
+                    <input type="text" id="valor3">
+                    <label for="valor3">Ingrese el límite de la sucesión</label>
+                </div>
+
+                <a class="waves-effect waves-light btn" onclick="generarSucesión()"><i class="material-icons left">loop</i>Generar</a>
+
+                <a class="waves-effect waves-light btn" onclick="limpiar()"><i class="material-icons right">delete</i>Limpiar</a>
+            </form>
+        </div>
+    </div>
+
+    <div class="section container blue-grey lighten-5 z-depth-5 right pst">
+        <h4>Resultado</h4>
+        <div class="container tam" id="r"></div>
+    </div>
+
+    <script>
+        var generarSucesión = function(valor1, valor2, valor3){
+            var valor1 = parseFloat(document.getElementById("valor1").value);
+            var valor2 = parseFloat(document.getElementById("valor2").value);
+            var valor3 = parseFloat(document.getElementById("valor3").value);
+            var aux = 0;
+ 
+            document.getElementById("r").innerHTML += (valor1+"<br>");
+            document.getElementById("r").innerHTML += (valor2+"<br>");
+
+            for(i = 1; i <= valor3; i++){
+                aux = valor1 + valor2;
+                document.getElementById("r").innerHTML += (aux+"<br>");
+                valor1 = valor2;
+                valor2 = aux;
+            }
+        }
+
+        var limpiar = function(){
+            document.getElementById("r").innerHTML = "";
+            document.getElementById("valor1").value = "";
+            document.getElementById("valor2").value = "";
+            document.getElementById("valor3").value = "";
+        }
+    </script>        
+</body>
+</html>
