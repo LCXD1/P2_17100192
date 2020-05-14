@@ -1,0 +1,61 @@
+body{
+    background: url(yugivskaiba.jpg) no-repeat center top fixed;
+    background-size: cover;
+}
+
+.section{
+    margin-top: 100px;
+    width: 500px;
+    background: rgba(0, 0, 0, .6);
+}
+
+.s2{
+    margin-top: 75px;
+    width: 500px;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: calc(50% - 50px);
+}
+
+.l2{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: calc(50% - 50px);
+}
+
+.input-field{
+    width: 325px;
+    color: black;
+}
+
+.input-field .prefix.active{
+    color: white;
+}
+
+.input-field input[type]:focus:not([readonly])+label{
+    color: white;
+}
+
+.input-field input[type]:not([readonly]), .input-field input[type]:focus:not([readonly]){
+    border-bottom: 1px solid white;
+    box-shadow: 0 1px 0 0 white;
+}
+
+.btn{
+    color: white;
+    background-color: black;
+}
+
+.btn:hover{
+    color: black;
+    background-color: white;
+}
